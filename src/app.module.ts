@@ -14,7 +14,7 @@ import { UsersModule } from './users/users.module';
       username: envConfig.username,
       password: envConfig.password,
       database: envConfig.database,
-      entities: ['src/**/*.entity{.ts,.js}'],
+      entities: ['src/**/*.entity{.ts}'],
       synchronize: true,
     }),
     UsersModule,
