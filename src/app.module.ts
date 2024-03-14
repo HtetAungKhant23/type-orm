@@ -14,8 +14,9 @@ import { UsersModule } from './users/users.module';
       username: envConfig.username,
       password: envConfig.password,
       database: envConfig.database,
-      entities: ['src/**/*.entity{.ts}'],
-      synchronize: true,
+      // entities: ['src/**/**/*.entity{.ts}'],
+      autoLoadEntities: true, // ? To automatically load entities
+      synchronize: true, // ? it is unsafe to use for schema synchronization on production once you get data in your database
     }),
     UsersModule,
   ],
