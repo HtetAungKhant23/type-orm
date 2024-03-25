@@ -13,5 +13,8 @@ export class User {
   last_name: string;
 
   @Column('text')
+  phone: string;
+
+  @Column('text')
   email: string;
 }
